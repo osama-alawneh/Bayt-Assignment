@@ -1,0 +1,8 @@
+set word "Welcome to you"
+puts "The word reversed been sorted : $word"
+set list ""
+foreach a $word {
+	puts $a
+	set list [linsert $list 0 $a]
+}
+puts "The word after been reversed : $list"

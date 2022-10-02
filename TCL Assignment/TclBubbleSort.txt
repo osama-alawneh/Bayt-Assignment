@@ -1,0 +1,16 @@
+set listToBeSorted [list 0 8 4 2 6 3 1 9 5 7]
+
+set temp 0
+set size [llength $listToBeSorted]
+puts "List Before Been Sorted : $listToBeSorted"
+for {set i 0} {$i < $size} {incr i} {
+	for {set j 0} {[expr $j + 1] < [expr $size - $i]} {incr j} {
+		if {[lindex $listToBeSorted $j] > [lindex $listToBeSorted [expr $j + 1]] } {
+			set temp [lindex $listToBeSorted $j]
+			set listToBeSorted [lreplace $listToBeSorted $j $j [lindex $listToBeSorted [expr $j + 1]]]
+			set listToBeSorted [lreplace $listToBeSorted [expr $j + 1] [expr $j + 1] $temp]
+		}
+	}
+}
+
+puts "List After Been Sorted : $listToBeSorted"

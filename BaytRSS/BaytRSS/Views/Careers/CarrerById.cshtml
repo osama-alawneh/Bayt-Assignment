@@ -1,0 +1,129 @@
+﻿@model BaytRSS.Models.Career
+@{
+    ViewBag.Title = "CareerById";
+}
+
+<h2>@Model.Title</h2>
+
+<div>
+    <h4>Career</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <div id="Title">
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link)
+        </dt>
+
+        <div id="Link">
+            <dd>
+                @Html.DisplayFor(model => model.Link)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guid)
+        </dt>
+
+        <div id="Guid">
+            <dd>
+                @Html.DisplayFor(model => model.Guid)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <div id="Description">
+            <dd>
+                @{
+                    var dec = Model.Description;
+                }
+                @Html.Raw(dec)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <div id="Category">
+            <dd>
+                @Html.DisplayFor(model => model.Category)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profile)
+        </dt>
+
+        <div id="Profile">
+            <dd>
+                @Html.DisplayFor(model => model.Profile)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <div id="City">
+            <dd>
+                @Html.DisplayFor(model => model.City)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <div id="Country">
+            <dd>
+                @Html.DisplayFor(model => model.Country)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostedDate)
+        </dt>
+
+        <div id="PostedDate">
+            <dd>
+                @Html.DisplayFor(model => model.PostedDate)
+            </dd>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Division)
+        </dt>
+
+        <div id="Division">
+            <dd>
+                @Html.DisplayFor(model => model.Division)
+            </dd>
+        </div>
+
+    </dl>
+</div>
+<div id="GoogleMaps">
+</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSx_8D25Fc7YX9QofIsD9fStwgrF0-jL0&callback=initMap&libraries=places"></script>
+
+<p>
+    @Html.ActionLink("Back to List", "Index", "Careers", null, new { @class = "btn btn-primary" })
+</p>
+
+@Scripts.Render("~/Scripts/Maps")
+
+
+
+
