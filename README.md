@@ -5,6 +5,8 @@
 
 
 ###### Note that you might need a windows operating system in order to the run the project.
+
+**Please note that you are required to have visual studio to run the project or any IDE that support .Net Framework Like:(Rider)**
 ## Opening the Project.
 ###### You would simply open the file **BaytRSS.sln** which will be found inside BaytRSS folder.
 
