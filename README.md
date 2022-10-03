@@ -1,8 +1,10 @@
 # RSS Bayt-Assignment
 ## Visual Studio Installation
 ###### First of all you would need to have a visual Studio IDE in order to be able to run the project.
+###### You can download the visual studio community version from this URL : https://visualstudio.microsoft.com/vs/older-downloads/
 
 
+###### Note that you might need a windows operating system in order to the run the project.
 ## Opening the Project.
 ###### You would simply open the file **BaytRSS.sln** which will be found inside BaytRSS folder.
 
